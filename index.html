@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizwan's | website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top bar -->
+    <div class="top-bar">
+        <a href="https://khanriyazi.github.io/Link-Project/" target="_blank" class="main-link">Portfolio</a>
+        <a href="https://khanriyazi.github.io/Freelance-Web-Developer-Portfolio-Template/" target="_blank" class="main-link">Website</a>
+        <div class="grid-container">
+            <div class="grid-icon" onclick="toggleDropdown()">
+                <!-- 9-dot grid icon -->
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <!-- Dropdown menu -->
+            <div id="dropdown" class="dropdown hidden">
+                <a href="https://www.google.com" target="_blank">
+                    <img src="#" alt="Google Logo">
+                    Google
+                </a>
+                <a href="https://github.com" target="_blank">
+                    <img src="https://via.placeholder.com/32.png" alt="GitHub Logo">
+                    GitHub
+                </a>
+                <a href="https://stackoverflow.com" target="_blank">
+                    <img src="https://via.placeholder.com/32.png" alt="Stack Overflow Logo">
+                    Stack Overflow
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="https://via.placeholder.com/32.png" alt="YouTube Logo">
+                    YouTube
+                </a>
+                <a href="https://khanriyazi.github.io/Tribute-to-Gandhi-Ji/" target="_blank">
+                    <img src="Gandhi.jpeg" alt="MDN Logo">
+                    Tribute to Gandhi Ji
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+        <div class="logo">
+            <img src="Google.jpg" width="250px" alt="Logo"> 
+        </div>
+
+        <!-- Search bar -->
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search..." onkeypress="checkEnter(event)">
+            <button onclick="search()">Search</button>
+        </div>
+
+        <!-- Back to Home Button -->
+        <button id="backHome" onclick="goHome()" class="hidden">Back to Home</button>
+
+        <!-- Meaning Display -->
+        <div id="meaning" class="meaning-container hidden"></div>
+
+        <!-- Important Notes Section -->
+        <div class="important-notes">
+            <h2>Important Notes</h2>
+            <div class="notes-container">
+                <a href="https://docs.google.com/document/d/1vReXmtiMlebaw9w6KmdunLFigVuTlLvutoTN7r6RubM/edit" target="_blank">Scratch</a>
+                <a href="https://docs.google.com/document/d/1nToN2XG6yutuLlvqAmXfJbU34arJ7wvnmu5oa_HKts0/edit" target="_blank">Notion</a>
+                <a href="https://clammy-hour-50c.notion.site/Personal-Website-112e1d2613a9802d885cd3b51840ce54" target="_blank">website Notion</a>
+                <a href="https://keep.google.com/u/0/#home" target="_blank">Google keeps 4</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
